@@ -1,4 +1,5 @@
 <template>
+<div>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed" style="z-index: 10000;">
       <div class="container-fluid">
@@ -255,7 +256,7 @@
 
               <div class="col-xs-12 col-lg-4">
                 <div class="card" style="align-items: center;">
-                  <img src="./img/Mask Group (3).png" class="card-img-top" alt="...">
+                  <img src="/Mask Group (3).png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <figure class="text-center">
                       <blockquote class="blockquote">
@@ -284,7 +285,7 @@
 
               <div class="col-xs-12 col-lg-4 ">
                 <div class="card" style="align-items: center;">
-                  <img src="./img/Mask Group (5).png" class="card-img-top" alt="...">
+                  <img src="/Mask Group (5).png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <figure class="text-center">
                       <blockquote class="blockquote">
@@ -345,7 +346,7 @@
 
               <div class="col-xs-12 col-lg-4">
                 <div class="card" style="align-items: center;">
-                  <img src="./img/Mask Group (9).png" class="card-img-top" alt="...">
+                  <img src="/Mask Group (9).png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <figure class="text-center">
                       <blockquote class="blockquote">
@@ -491,7 +492,7 @@
       </div>
     </div>
 
-    
+    <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
 
@@ -504,7 +505,8 @@
 
 
       </footer>
-
+      </div>
+</div>
 </template>
 
 <script>
