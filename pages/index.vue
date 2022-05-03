@@ -511,6 +511,10 @@
 
 <script>
 export default {
-  name: 'IndexPage',
+ 
+  layout: 'test'
 }
+
+
+
 </script>

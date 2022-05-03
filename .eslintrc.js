@@ -4,6 +4,15 @@ module.exports = {
     browser: true,
     node: true,
   },
+  
+  overrides: [
+    {
+        files: ['pages/**/*.vue', 'layouts/*.vue'],
+        rules: {
+            'vue/multi-word-component-names': 'off',
+        },
+    },
+],
   parserOptions: {
     parser: '@babel/eslint-parser',
     requireConfigFile: false,
