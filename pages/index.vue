@@ -130,10 +130,10 @@
 
           <div class="col-5 col-xs-12">
             <div class="d-hidden d-sm-flex flex-column align-items-end">
-              <img src="/fb.svg" class="rounded d-block mt-2 p-1" />
-              <img src="/instagram.svg" class="rounded d-block mt-2 p-1" />
-              <img src="/e-mail.svg" class="rounded d-block mt-2 p-1" />
-              <img src="/telegram.svg" class="rounded d-block mt-2 p-1" />
+             <a href="https://www.facebook.com/dedmorozprotiv" target="_blank"> <img src="/fb.svg" class="rounded d-block mt-2 p-1" /></a>
+               <a href="https://www.instagram.com/ffrost_against/" target="_blank"> <img src="/instagram.svg" class="rounded d-block mt-2 p-1" /></a>
+              <a><img src="/e-mail.svg" class="rounded d-block mt-2 p-1" /></a>
+              <a><img src="/telegram.svg" class="rounded d-block mt-2 p-1" /></a>
 
               <div class="col-xs-12 col-md-12 d-flex flex-column align-items-end">
                 <div class="ratio ratio-16x9">
@@ -496,10 +496,10 @@
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
 
-          <img src="/fb.svg" class="rounded d-block mt-4 mb-8 p-4">
-          <img src="/instagram.svg" class="rounded d-block mt-4  p-4">
-          <img src="/e-mail.svg" class="rounded d-block mt-4  p-4">
-          <img src="/telegram.svg" class="rounded d-block mt-4  p-4">
+          <a href="https://www.facebook.com/dedmorozprotiv" target="_blank"><img src="/fb.svg" class="rounded d-block mt-4 mb-8 p-4"></a>
+          <a href="https://www.instagram.com/ffrost_against/" target="_blank"> <img src="/instagram.svg" class="rounded d-block mt-4  p-4"></a>
+          <a><img src="/e-mail.svg" class="rounded d-block mt-4  p-4"></a>
+          <a><img src="/telegram.svg" class="rounded d-block mt-4  p-4"></a>
 
         </div>
 
