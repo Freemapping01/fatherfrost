@@ -1,520 +1,351 @@
 <template>
-<div>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed" style="z-index: 10000;">
-      <div class="container-fluid">
-        <div class="container">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent ">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <a class="navbar-brand" href="#about">О ФЕСТИВАЛЕ</a>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#top">Темы</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#reviews">Отзывы</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Заявка
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  RU
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">English</a></li>
-                  <li><a class="dropdown-item" href="#">Suomi</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <div class="jumbotron jumbotron-fluid hero">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 d-flex flex-column align-items-end">
-          <p class="lead text-white">МЕЖДУНАРОДНЫЙ ФЕСТИВАЛЬ -</p>
-          <h1 class="display-4 text-white fw-bold">ПИР ПОСЛЕ ЧУМЫ</h1>
-
-          <a class="btn btn-primary btn-lg knop" href="#" role="button">Подать заявку</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 id="about" class="featurette-heading">О ФЕСТИВАЛЕ</h2>
-        <p class="lead">Культурно-политический фестиваль, нацеленный на практику критического мышления, рефлексию и
-          выработку новых стратегий активизма.Проводится в Хельсинки, /Финляндия/ 5-7 января и организуется местными
-          активистами, а также участниками из России и постсоветского пространства. </p>
-      </div>
-      <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/about1.jpg">
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">ИСТОРИЯ</h2>
-        <p class="lead">Впервые фестиваль стартовал в 2014 году под ироничным названием “Дед мороз против”, с тех пор
-          процессы происходящие в мире стремительно менялись. Повестки объединяющие нас на фестивальной площадке, этики
-          взаимодействия, партитуры пересечений и геополитическая ситуация — все это со временем перестраивалось и
-          требовало переосмысления как практик, так и сопутствующих теорий.
-        </p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/about2.jpg">
-
-
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">ЧТО ИЗМЕНИЛОСЬ?</h2>
-        <p class="lead">Также менялись концепция, формат и коллектив организующий фестиваль. Если сравнить каким был
-          фест в самом начале своего пути и каким он стал, станет очевидно, что это разные проекты по своей форме и
-          содержанию.
-
-          <br>
-          <br>Современная ситуация требует изменения эстетических форм отвечающих новой концепции. Еще одним мощным
-          стимулом к переосмыслению репрезентации послужила пандемия, которая затронула все аспекты нашей жизни и
-          требующая reset старых протоколов.
-          <br>
-          <br>Подробную программу и имена участни_ков мы анонсируем ближе к датам.
-
-          <br> Формат фестиваля более длительный и расслабленный, чем ранее. Приветствуются параллельные сессии и
-          пассивный нетворкинг — предложения можно скидывать на почту dedmoroz@riseup.net
-
-        </p>
-      </div>
-      <div class="col-md-5">
-        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="/about3.jpg">
-
-
-      </div>
-    </div>
-
+  <div>
+    <TheHero />
+    <AboutMe />
+    <PresentationList />
     
-  </div>
-
-
-
-
-    <div class="bg-light" style="padding-bottom: 5px;">
+    <div class="container-fluid">
       <div class="container">
-        <div class="row justify-content-between" style="padding-top: 50px;">
-          <div class="col-xs-12 col-lg-5">
-            <img src="/photo_about1.png" class="img-fluid" />
-          </div>
+        <h2 id="top" class="featurette-heading" style="padding-top: 90px">
+          ТЕМЫ ПРОШЛОГР ФЕСТИВАЛЯ
+        </h2>
+        <div class="about text-sm-start fs-5"></div>
 
-          <div class="col-5 col-xs-12">
-            <div class="d-hidden d-sm-flex flex-column align-items-end">
-             <a href="https://www.facebook.com/dedmorozprotiv" target="_blank"> <img src="/fb.svg" class="rounded d-block mt-2 p-1" /></a>
-               <a href="https://www.instagram.com/ffrost_against/" target="_blank"> <img src="/instagram.svg" class="rounded d-block mt-2 p-1" /></a>
-              <a><img src="/e-mail.svg" class="rounded d-block mt-2 p-1" /></a>
-              <a><img src="/telegram.svg" class="rounded d-block mt-2 p-1" /></a>
-
-              <div class="col-xs-12 col-md-12 d-flex flex-column align-items-end">
-                <div class="ratio ratio-16x9">
-                  <iframe src="https://www.youtube.com/embed/etTyd3MQZwA" title="YouTube video"
-                    allowfullscreen></iframe>
-                </div>
-                <div class="col-xs-12 col-md-12 d-flex paragraph text-sm-start fs-5">
-                  <p></p>
-                </div>
-
-
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-7">
-          <h4 class="featurette-heading">фото с прошлого фестиваля</h4>
-        </div>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/photo_carousel1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="/photo_carusel3.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="/photo_carusel2.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Предыдущий</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Следующий</span>
-          </button>
-        </div>
-      </div>
-    </div>
-
-
-
-        <div class="container-fluid">
-          <div class="container">
+        <div class="row">
           
-
-            <h2 id="top" class="featurette-heading" style="padding-top: 90px;">ТЕМЫ ПРОШЛОГР ФЕСТИВАЛЯ</h2>
-            <div class="about text-sm-start fs-5"></div>
-
-            <div class="row">
-
-              <div class="col-xs-12 col-lg-4 ">
-                <div class="card" style="align-items: center;">
-                  <img src="/4413.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">Презентация независимой площадки - <br>
-                          СТУДИЯ/STUDIO4413
-                          <br>(воркшоп/free mapping)</p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
+<TopicsFest />
+          <div class="col-xs-12 col-lg-4">
+            <div class="card" style="align-items: center">
+              <img src="/Mask Group.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="card-text">
+                      «Новая рациональность <br />и политическое воображение»
+                      <br />
+                      АЛЛА МИТРОФАНОВА
+                    </p>
+                  </blockquote>
+                </figure>
+                <a href="#" class="btn btn-primary">Подробнее</a>
               </div>
-
-              <div class="col-xs-12 col-lg-4">
-                <div class="card" style=" align-items: center;">
-                  <img src="/Mask Group.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">«Новая рациональность
-                          <br>и политическое воображение»
-                          <br> АЛЛА МИТРОФАНОВА</p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-lg-4">
-                <div class="card" style="align-items: center;">
-                  <img src="/Mask Group (1).png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">Small media и политический активизм (лекция)
-                          <br>ПАВЕЛ НИКУЛИН</p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-lg-4 ">
-                <div class="card" style="align-items: center;">
-                  <img src="/Mask Group (2).png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">Экологические протесты в России 2018/2019
-                          Лёля Нордик</p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-lg-4">
-                <div class="card" style="align-items: center;">
-                  <img src="/Mask Group (3).png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">Appetitive сессия DIY печати на ваших носителях (воркшоп)
-                          Аня Курбатова</p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-lg-4">
-                <div class="card" style="align-items: center;">
-                  <img src="/Mask Group (4).png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">ПАРТИЯ МЁРТВЫХ: ВВЕДЕНИЕ В НЕКРОПОЛИТИКУ</p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-lg-4 ">
-                <div class="card" style="align-items: center;">
-                  <img src="/Mask Group (5).png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">Вестник Бури |
-                          <br>Воля и Правда</p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-lg-4">
-                <div class="card" style="align-items: center;">
-                  <img src="/Mask Group (6).png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">Феминизм(ы) в поисках общего языка
-                          <br>ВИКТОРИЯ КРАВЦОВА</p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-lg-4">
-                <div class="card" style="align-items: center;">
-                  <img src="/Mask Group (7).png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">Аналитический центр “СОВА”
-                          <br>МАША МУРАДОВА</p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-lg-4 ">
-                <div class="card" style="align-items: center;">
-                  <img src="/Mask Group (8).png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">
-                          МАГДАЛЕНА ТУНКАРА
-                        </p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-lg-4">
-                <div class="card" style="align-items: center;">
-                  <img src="/Mask Group (9).png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">Концерт ТЕХНО-ПОЭЗИИ </p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-xs-12 col-lg-4">
-                <div class="card" style="align-items: center;">
-                  <img src="/Mask Group (10).png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <figure class="text-center">
-                      <blockquote class="blockquote">
-                        <p class="card-text">КОНЦЕРТ в УЛЬРИКЕ</p>
-                      </blockquote>
-                    </figure>
-                    <a href="#" class="btn btn-primary">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-
-
             </div>
-
-
-
           </div>
-
-
-        </div>
-  
-    <div class="bg-light">
-      <hr class="featurette-divider">
-      <div class="container">
-       
-
-        <h2 id="reviews" class="featurette-heading">ОТЗЫВЫ</h2>
-        <div class="row" style="padding-bottom: 100px; padding-top: 100px;">
 
           <div class="col-xs-12 col-lg-4">
-            <div class="card reviews" >
+            <div class="card" style="align-items: center">
+              <img src="/Mask Group (1).png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="card-text">
+                      Small media и политический активизм (лекция) <br />ПАВЕЛ
+                      НИКУЛИН
+                    </p>
+                  </blockquote>
+                </figure>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            <div class="card" style="align-items: center">
+              <img src="/Mask Group (2).png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="card-text">
+                      Экологические протесты в России 2018/2019 Лёля Нордик
+                    </p>
+                  </blockquote>
+                </figure>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            <div class="card" style="align-items: center">
+              <img src="/Mask Group (3).png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="card-text">
+                      Appetitive сессия DIY печати на ваших носителях (воркшоп)
+                      Аня Курбатова
+                    </p>
+                  </blockquote>
+                </figure>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            <div class="card" style="align-items: center">
+              <img src="/Mask Group (4).png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="card-text">
+                      ПАРТИЯ МЁРТВЫХ: ВВЕДЕНИЕ В НЕКРОПОЛИТИКУ
+                    </p>
+                  </blockquote>
+                </figure>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            <div class="card" style="align-items: center">
+              <img src="/Mask Group (5).png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="card-text">Вестник Бури | <br />Воля и Правда</p>
+                  </blockquote>
+                </figure>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            <div class="card" style="align-items: center">
+              <img src="/Mask Group (6).png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="card-text">
+                      Феминизм(ы) в поисках общего языка <br />ВИКТОРИЯ КРАВЦОВА
+                    </p>
+                  </blockquote>
+                </figure>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            <div class="card" style="align-items: center">
+              <img src="/Mask Group (7).png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="card-text">
+                      Аналитический центр “СОВА” <br />МАША МУРАДОВА
+                    </p>
+                  </blockquote>
+                </figure>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            <div class="card" style="align-items: center">
+              <img src="/Mask Group (8).png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="card-text">МАГДАЛЕНА ТУНКАРА</p>
+                  </blockquote>
+                </figure>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            <div class="card" style="align-items: center">
+              <img src="/Mask Group (9).png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="card-text">Концерт ТЕХНО-ПОЭЗИИ</p>
+                  </blockquote>
+                </figure>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-lg-4">
+            <div class="card" style="align-items: center">
+              <img src="/Mask Group (10).png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="card-text">КОНЦЕРТ в УЛЬРИКЕ</p>
+                  </blockquote>
+                </figure>
+                <a href="#" class="btn btn-primary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light">
+      <hr class="featurette-divider" />
+      <div class="container">
+        <h2 id="reviews" class="featurette-heading">ОТЗЫВЫ</h2>
+        <div class="row" style="padding-bottom: 100px; padding-top: 100px">
+          <div class="col-xs-12 col-lg-4">
+            <div class="card reviews">
               <div class="card-body">
                 <h5 class="card-title">Камелия ИОНОВИЧ</h5>
-                <h6 class="card-subtitle mb-2 text-muted">соорганизаторка проекта "ЧЁРНЫЙ КВАДРАТ"</h6>
-                <br>
-                <p class="card-text">Очень хорошо, так хорошо, что я ни разу там не была. Но подозреваю, что могло бы
-                  быть и
-                  лучше.</p>
-
+                <h6 class="card-subtitle mb-2 text-muted">
+                  соорганизаторка проекта "ЧЁРНЫЙ КВАДРАТ"
+                </h6>
+                <br />
+                <p class="card-text">
+                  Очень хорошо, так хорошо, что я ни разу там не была. Но
+                  подозреваю, что могло бы быть и лучше.
+                </p>
               </div>
             </div>
           </div>
 
-          <div class="col-xs-12 col-lg-4 ">
-            <div class="card reviews" >
+          <div class="col-xs-12 col-lg-4">
+            <div class="card reviews">
               <div class="card-body">
                 <h5 class="card-title">Мария ДМИТРИЕВА</h5>
-                <h6 class="card-subtitle mb-2 text-muted">соорганизаторка проекта "ЭТО ЗДЕСЬ"</h6>
-                <br>
-                <p class="card-text">Невообразимо плохо, но мы очень стараемся. Будем стараться и дальше, чтобы
-                  перепрошить
-                  эту и другую историю.</p>
-
+                <h6 class="card-subtitle mb-2 text-muted">
+                  соорганизаторка проекта "ЭТО ЗДЕСЬ"
+                </h6>
+                <br />
+                <p class="card-text">
+                  Невообразимо плохо, но мы очень стараемся. Будем стараться и
+                  дальше, чтобы перепрошить эту и другую историю.
+                </p>
               </div>
             </div>
           </div>
 
-
-          <div class="col-xs-12 col-lg-4 ">
-            <div class="card reviews" >
+          <div class="col-xs-12 col-lg-4">
+            <div class="card reviews">
               <div class="card-body">
                 <h5 class="card-title">Баженова СОФИЯ</h5>
-                <h6 class="card-subtitle mb-2 text-muted">соорганизаторка проекта "ЭТО ТАМ"</h6>
-                <br>
-                <p class="card-text">Очень хорошо. Но я слилась с последнего фестиваля и вот уже два года ничего не
-                  происходит.</p>
-
+                <h6 class="card-subtitle mb-2 text-muted">
+                  соорганизаторка проекта "ЭТО ТАМ"
+                </h6>
+                <br />
+                <p class="card-text">
+                  Очень хорошо. Но я слилась с последнего фестиваля и вот уже
+                  два года ничего не происходит.
+                </p>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
 
     <div class="bg-white">
-
       <div class="container container-fluid mt-4">
-
-
         <div class="container marketing">
-
           <div class="row text-sm-start fs-5">
-
-            <div class="col-lg-4" style="display: flex;align-items: center;">
+            <div class="col-lg-4" style="display: flex; align-items: center">
               <p>Наши партнёры</p>
             </div>
-            <div class="col-lg-2"
-              style="/* justify-content: center; */display: flex;flex-direction: column;/* align-content: center; */align-items: center; padding: 40px;">
-              <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="/logo_moloko.png">
+            <div
+              class="col-lg-2"
+              style="
+                /* justify-content: center; */
+                display: flex;
+                flex-direction: column; /* align-content: center; */
+                align-items: center;
+                padding: 40px;
+              "
+            >
+              <img
+                class="bd-placeholder-img rounded-circle"
+                width="100"
+                height="100"
+                src="/logo_moloko.png"
+              />
 
               <h5>moloko.plus</h5>
-
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-2"
-              style="/* justify-content: center; */display: flex;flex-direction: column;/* align-content: center; */align-items: center; padding: 40px;">
-              <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="/logo_avtonom.png">
+            </div>
+            <!-- /.col-lg-4 -->
+            <div
+              class="col-lg-2"
+              style="
+                /* justify-content: center; */
+                display: flex;
+                flex-direction: column; /* align-content: center; */
+                align-items: center;
+                padding: 40px;
+              "
+            >
+              <img
+                class="bd-placeholder-img rounded-circle"
+                width="100"
+                height="100"
+                src="/logo_avtonom.png"
+              />
 
               <h5>avtonom.org</h5>
+            </div>
+            <!-- /.col-lg-4 -->
 
-            </div><!-- /.col-lg-4 -->
-
-            <div class="col-lg-2"
-              style="/* justify-content: center; */display: flex;flex-direction: column;/* align-content: center; */align-items: center; padding: 40px;">
-              <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="/logo_antijob.png">
+            <div
+              class="col-lg-2"
+              style="
+                /* justify-content: center; */
+                display: flex;
+                flex-direction: column; /* align-content: center; */
+                align-items: center;
+                padding: 40px;
+              "
+            >
+              <img
+                class="bd-placeholder-img rounded-circle"
+                width="100"
+                height="100"
+                src="/logo_antijob.png"
+              />
 
               <h5>antijob.net</h5>
-
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-2"
-              style="/* justify-content: center; */display: flex;flex-direction: column;/* align-content: center; */align-items: center; padding: 40px;">
-              <img class="bd-placeholder-img rounded-circle" width="100" height="100" src="/logo4413.png">
+            </div>
+            <!-- /.col-lg-4 -->
+            <div
+              class="col-lg-2"
+              style="
+                /* justify-content: center; */
+                display: flex;
+                flex-direction: column; /* align-content: center; */
+                align-items: center;
+                padding: 40px;
+              "
+            >
+              <img
+                class="bd-placeholder-img rounded-circle"
+                width="100"
+                height="100"
+                src="/logo4413.png"
+              />
 
               <h5>studio_4413</h5>
-
-            </div><!-- /.col-lg-4 -->
-          </div><!-- /.row -->
-
+            </div>
+            <!-- /.col-lg-4 -->
+          </div>
+          <!-- /.row -->
 
           <!-- START THE FEATURETTES -->
 
-
-
           <!-- /END THE FEATURETTES -->
-
         </div>
-
       </div>
     </div>
-
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-
-          <a href="https://www.facebook.com/dedmorozprotiv" target="_blank"><img src="/fb.svg" class="rounded d-block mt-4 mb-8 p-4"></a>
-          <a href="https://www.instagram.com/ffrost_against/" target="_blank"> <img src="/instagram.svg" class="rounded d-block mt-4  p-4"></a>
-          <a><img src="/e-mail.svg" class="rounded d-block mt-4  p-4"></a>
-          <a><img src="/telegram.svg" class="rounded d-block mt-4  p-4"></a>
-
-        </div>
-
-
-      </footer>
-      </div>
-</div>
+  </div>
 </template>
 
 <script>
-export default {
- 
-  layout: 'test'
-}
-
-
-
+import TopicsFest from '~/components/TopicsFest.vue';
+export default { components: { TopicsFest } }
 </script>

@@ -3,36 +3,12 @@
   border-color: #ffffff;
 }
 
-
-.jumbotron {
-   padding: 14rem 6rem 2rem;
-    margin-bottom: 2rem;
-    border-radius: 0.3rem;
-    background-color: antiquewhite;
-}
-
-
-.lead {
-  margin-bottom: 0%;
-}
-
 .display-4 {
   margin-top: 0%;
   
 }
 
-.hero {
-  background: url('/Frame46_3.gif');
-  background-position: center;
-  background-size: 100%;
-  height: 600px;
-}
 
-@media screen and (max-width: 1566px) {
-.hero {
-  background-size: cover; 
-}
-}
 
 
 @media screen  and (max-width: 1566px) {
@@ -76,11 +52,7 @@
 
 
 
-.navbar {
-  
-  width: 100%;
-  
-}
+
 
 .img-fluid {
   margin-bottom: 50px;
@@ -91,11 +63,6 @@ h1 {
   margin: 0.67em 0;
 }
 
-.about {
-  padding-left: 80px;
-  padding-right: 80px;
-  margin-bottom: 100px;
-}
 
 .bg-white {
   padding-bottom: 100px;
@@ -106,17 +73,6 @@ h1 {
   margin-top: 20px;
 }
 
-.carousel-inner {
-  height: 409px;
-}
-
-.carousel-inner img {
-  transform: translateY(-30%);
-}
-
-.carousel {
-  margin-block-end: 100px;
-}
 
 .card {
   margin-block-end: 25px;
